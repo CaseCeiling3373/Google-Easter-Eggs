@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    flex-direction: column;
+    transition: all ease 5s;
+}
+.googleLogo{
+    width: 500px;
+    height: 250px;
+    background-image: url(Google-logo-500x281.png);
+
+}
+input{
+    width: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+.searchIcon{
+    background-image: url(Search.svg);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    position: absolute;
+    top: 9px;
+    left: 4px;
+}
+.inputBox{
+    position: relative;
+}
+.barrelRoll{
+    transform: rotate(720deg);
+}
+.askew{
+    transform: rotate(-10deg);
+}
+.mirror{
+    transform: rotateY(180deg);
+}
+.darkMode{
+    filter: invert(100%);
+    background-color: black;
+}
+.helpBtn{
+    width: 40px;
+    height: 40px;
+    background-image: url(helpAmongUs.svg);
+    background-size: contain;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.helpText{
+    opacity: 0;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    background-color: white;
+    transition: all ease 1s;
+}
+.helpBtn:hover ~ .helpText{
+    opacity: 1;
+}
